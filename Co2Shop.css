@@ -1,147 +1,99 @@
 body{
     background-image:url(https://images.pexels.com/photos/1087727/pexels-photo-1087727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;   
-    color: #ed920b; 
+    color: #ffffff; 
 }
-#all{
-    background-color:rgba(0, 0, 0, 0.525) ;
-    width: 100%;
-}
-#navbar nav ul li{
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    padding: 20px;
-}
-nav{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-}
-#navbar a{
-    font-size: larger;
-    font-weight: bolder;
-    padding: 5px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-#navbar a:hover{
-    position: relative;
-    color:#ed920b;
-    border: 2px white solid;
-    border-radius: 20px;
-    transition: 250ms;
+
+
+.main1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 #login{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+    width: 250px;
+    background-color: rgba(2, 8, 4, 0.422);
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+.main1p{
+    padding-top: 40px;
+    width: 500px;
+    padding-left: 40px;
 }
 #login input{
-    width: 100%;
-    padding: 4px;
-    border: 1px solid white;
-    background:rgba(0, 0, 0, 0.674);
-    color: white;
-    border-radius: 5px;
-    outline: none;
+    height: 20px;
+    width: 200px;
 }
-#login span{
-    padding: 5px;
-    pointer-events: none;;
+#login button{
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+#navbarall{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+#navbar nav ul li{
     text-transform: uppercase;
+    padding: 20px;
+    font-size: 12px;
+    list-style: none;
 }
-#login input:focus{
-    transform: scale(102%);
-    transition: 200ms ease-in-out;
+#navbar nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button{
-    position: relative;
-    background: #ed920b;
-    color: black;
+#navbar a{
+    font-size: 12px;
+    font-weight: bolder;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    padding: 3px;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition-duration: 300ms;
 }
-button:hover{
-    transform: translateX(3px);
+#navbar a:hover{
+    color:#ed920b;
 }
-button::before{
-    content: '';
-    position: absolute;
-    inset: 2px;
-}
+
+
+
 #search{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-p{
-    letter-spacing: 10%;
+#search input{
+    width: 150px;
+    height: 20px;
 }
+
 #shopanimelist{
-    position: relative;
     list-style: none;
     display: flex;
-    width: 100%;
-    justify-content: center;
-    right: 5%;;
-}
-#shopanimelist li{
-    position: relative;
-    margin: 20px;
-    width: 100%;
-}
-#shopanimelist li {
-    position: relative;
-    top: 0 ;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 2em;
-    color: white;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    gap: 100px;
 }
+
 svg{
-    width: 12%;
-    color: orange;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    transition: 1s;
+    transition: 300ms;
     cursor: pointer;
 }
 svg:hover{
     transform: scale(1.1) translateY(5%);
-    color: aqua;
-}
-#items{
-    width: 100%;
-}
-#co2{
-    box-sizing: border-box;
-}
-#co2 img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px white solid;
-}
-.card{
-    color: white;
-    background: rgba(0, 0, 0, 0.669);
-    padding: 5px;
-    cursor: pointer;
-}
-.card:hover{
-    transform: scale(105%);
-}
-.TOP{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
-    letter-spacing: 2%;
 }
